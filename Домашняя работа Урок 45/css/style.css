@@ -1,0 +1,66 @@
+/* Обнуление стилей для единообразия */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 2px solid #000000;
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+    padding: 15px;
+    display: flex;
+    /* Используем flexbox для выравнивания блоков */
+    justify-content: center;
+    /* Выравниваем блоки по центру горизонтали */
+    align-items: center;
+    /* Выравниваем блоки по центру вертикали */
+    min-height: 100vh;
+    /* Занимаем всю высоту экрана */
+}
+
+.container {
+    display: flex;
+    /* Контейнер тоже делаем flex, чтобы блоки шли в ряд */
+    flex-wrap: wrap;
+    /* Разрешаем перенос на новую строку, если не помещаются */
+    justify-content: flex-start;
+    /* Выравниваем блоки по центру горизонтали */
+    gap: 10px;
+    /* Добавляем отступы между блоками */
+    width: 920px; /*  ширина контейнера, чтобы в строке помещалось 4 блока (200px * 4 + 10px * 3) */
+}
+
+.block1 {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+    background: #7ef500;
+    display: flex;
+    /* Используем flexbox для содержимого блока */
+    flex-direction: column;
+    /* Располагаем элементы вертикально */
+    align-items: center;
+    /* Выравниваем элементы по центру горизонтали */
+    justify-content: center;
+    /* Выравниваем элементы по центру вертикали */
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 10px #080808;
+    text-align: center;
+    /* Выравниваем текст по центру */
+}
+
+.block1 .title {
+    font-weight: bold;
+    /* Делаем заголовок жирным */
+    margin-bottom: 10px;
+    /* Отступ снизу от заголовка */
+}
+
+.block1 .content {
+    text-align: center;
+    /* Выравниваем текст по центру */
+}
