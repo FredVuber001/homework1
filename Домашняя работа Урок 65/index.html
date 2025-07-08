@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БЭМ Практика</title>
+    <link rel="stylesheet" href="style.css"> <!-- Предполагается, что стили будут в отдельном файле -->
+</head>
+
+<body>
+    <!-- Header (Блок) -->
+    <header class="header">
+        <div class="container"> <!-- Блок container (можно использовать как базовый блок для центрирования контента) -->
+            <div class="header__inner"> <!-- Элемент блока header: внутренняя обертка -->
+                <a class="logo" href="#"> <!-- Блок logo -->
+                    <img class="logo__img" src="" alt="Логотип"> <!-- Элемент блока logo: изображение -->
+                </a>
+                <!-- Navigation (Блок) -->
+                <nav class="nav">
+                    <ul class="nav__list"> <!-- Элемент блока nav: список -->
+                        <li class="nav__item"> <!-- Элемент блока nav: пункт списка -->
+                            <a class="nav__link nav__link--active" href="#">Главная</a> <!-- Элемент блока nav: ссылка, с модификатором active -->
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Меню</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Блог</a>
+                        </li>
+                         <li class="nav__item">
+                            <a class="nav__link" href="#">Акции</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Галерея</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header Controls (Блок) -->
+                <div class="header__controls"> <!-- Элемент блока header: элементы управления -->
+                    <button class="header__button header__button--search" type="button">Поиск</button> <!-- Элемент блока header: кнопка, с модификатором search -->
+                    <!-- User Navigation (Блок) -->
+                    <ul class="user-nav"> <!-- Блок user-nav (навигация пользователя) -->
+                        <li class="user-nav__item"> <!-- Элемент блока user-nav: пункт списка -->
+                            <a class="user-nav__link" href="#"> <!-- Элемент блока user-nav: ссылка -->
+                                <img class="user-nav__img" src="" alt="Уведомления"> <!-- Элемент блока user-nav: изображение -->
+                            </a>
+                            <span class="user-nav__badge">2</span> <!-- Элемент блока user-nav: значок уведомлений -->
+                        </li>
+                        <li class="user-nav__item">
+                            <a class="user-nav__link" href="#">
+                                <img class="user-nav__img" src="" alt="Избранное">
+                            </a>
+                        </li>
+                        <li class="user-nav__item">
+                            <a class="user-nav__link" href="#">
+                                <img class="user-nav__img" src="" alt="Профиль">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome Section (Блок) -->
+    <section class="welcome">
+        <div class="container">
+            <p class="welcome__subtitle">Welcome To Steak In</p> <!-- Элемент блока welcome: подзаголовок -->
+            <h1 class="welcome__title">Лучшие стейки в городе!</h1> <!-- Элемент блока welcome: заголовок -->
+            <p class="welcome__text">Попробуйте наши сочные стейки, приготовленные по уникальным рецептам.</p> <!-- Элемент блока welcome: текст -->
+            <button class="welcome__button">Заказать сейчас</button> <!-- Элемент блока welcome: кнопка -->
+        </div>
+    </section>
+</body>
+
+</html>
