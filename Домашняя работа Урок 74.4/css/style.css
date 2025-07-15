@@ -1,0 +1,87 @@
+/* css/style.css */
+body {
+    background-color: #1e1e20;
+}
+
+.wrapper {
+    padding: 50px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    background-color: #444;
+}
+
+.block {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+/* Добавляем стили и анимации для каждого блока */
+.block1 {
+    top: 0;
+    left: 0;
+    animation: move-block1 3s .3s infinite alternate,
+               color-block 3s .3s infinite alternate;
+}
+
+.block2 {
+    top: 50px;
+    left: 50px;
+    animation: move-block2 4s .5s infinite alternate,
+               color-block 4s .5s infinite alternate;
+}
+
+.block3 {
+    top: 100px;
+    left: 100px;
+    animation: move-block3 5s .7s infinite alternate,
+               color-block 5s .7s infinite alternate;
+}
+
+/* Определяем анимации */
+@keyframes move-block1 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: calc(100% - 50px);
+    }
+}
+
+@keyframes move-block2 {
+    0% {
+        right: calc(100% - 50px);
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes move-block3 {
+    0% {
+        left: 0px;
+        top: 100px;
+    }
+    50% {
+        border-radius: 50%;
+        top: 150px;
+    }
+    100% {
+        left: calc(100% - 50px);
+        top: 100px;
+    }
+}
+
+@keyframes color-block {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: rgb(247, 109, 109);
+    }
+}

@@ -1,0 +1,87 @@
+/* style.css */
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    padding: 50px 100px;
+    height: 40vh; /*  чтобы контейнеры не занимали всю высоту экрана */
+}
+
+.transition {
+    height: 100%;
+    display: flex; /* Для горизонтального размещения блоков */
+}
+
+.transition2 {
+    height: 100%;
+    display: flex; /* Для горизонтального размещения блоков */
+}
+
+.button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; /* Уменьшил размер шрифта */
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-color: #555;
+    transition: background .3s, border-radius .3s; /* Добавил transition для красоты */
+}
+
+.button:hover {
+    background: rgb(238, 131, 131);
+    border-radius: 10px;
+}
+
+.block {
+    width: 10px;
+    height: 100%; /*  высота блоков равна высоте контейнера .transition */
+    transition-duration: 1s; /*  длительность анимации */
+}
+
+/* Цвета для блоков */
+.red {
+    background: linear-gradient(120deg, #f34384c4, #f16452c4 1000px);
+}
+
+.blue {
+    background: linear-gradient(120deg, #5f51dbc4, #73bcecc4 1000px);
+}
+
+.orange {
+    background: linear-gradient(120deg, #f09351c4, #f8bf86c4 1000px);
+}
+
+.purple {
+    background: linear-gradient(120deg, #b475f8c4, #d27bf2c4 1000px);
+}
+
+/* Анимация при наведении на .transition */
+.transition:hover .block {
+    width: 100%; /*  ширина блоков увеличивается до 100% при наведении */
+}
+
+.transition2:hover .block {
+    width: 50%; /*  ширина блоков увеличивается до 100% при наведении */
+}
+
+/* Разные функции времени для каждой кнопки */
+.red {
+    transition-timing-function: ease;
+}
+
+.blue {
+    transition-timing-function: ease-in;
+}
+
+.orange {
+    transition-timing-function: ease-out;
+}
+
+.purple {
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
