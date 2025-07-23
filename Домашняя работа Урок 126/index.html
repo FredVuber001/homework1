@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашняя работа Урок 126</title>
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <title>HTML-Maket-3-HoneWork-1</title>
 </head>
 
-<body>
+<body class="body">
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
-                        <img class="header__logo" src="img/icons/logos/logo-dark.svg" alt="Логотип компании Wake & Bake">
+                        <a class="header__logo" href="#">
+                            <img src="img/icons/logos/logo-dark.svg" alt="Логотип компании">
+                        </a>
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
@@ -42,6 +43,9 @@
                                 </li>
                             </ul>
                         </nav>
+                        <a class="burger-icon" href="#">
+                            <span></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -57,16 +61,23 @@
                                 Научись печь торты и десерты с нуля
                             </h1>
                             <p class="hero__text">
-                                За 8 практических занятий ты получишь новые возможности для самореализации и любимое дело
+                                За 8 практических занятий ты получишь новые возможности для самореализации и любимое
+                                дело
                             </p>
-                            <a class="hero__button button" href="#">
+                            <div class="hero__img-control hero__img-control--mobile">
+                                <a class="hero__img-button" data-fslightbox href=".//video/cake.mp4">
+                                    <img src="img/icons/play.svg" alt="">
+                                </a>
+                                Посмотри, как готовятся наши торты
+                            </div>
+                            <a class="hero_button button" href="#">
                                 Записаться на курс
                             </a>
                         </div>
                         <div class="hero__img">
                             <img src="img/content/girl.png" alt="Девушка с тортом в руках">
-                            <div class="hero__img-conrol">
-                                <a class="hero__img-button" data-fslightbox href="media/cake.mp4">
+                            <div class="hero__img-control">
+                                <a class="hero__img-button" data-fslightbox="video" href="./video/cake.mp4">
                                     <img src="img/icons/play.svg" alt="">
                                 </a>
                                 Посмотри, как готовятся наши торты
